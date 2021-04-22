@@ -8,7 +8,9 @@ Adapter to Laravel of the most popular libraries:
 
 No dependency, only Curl (support php >=7.1 )
 
-More: https://github.com/smi2/phpClickHouse#features
+More:
+- https://github.com/smi2/phpClickHouse#features
+- https://github.com/glushkovds/phpclickhouse-laravel
     
 ## Prerequisites
 - php 7.1
@@ -19,7 +21,7 @@ More: https://github.com/smi2/phpClickHouse#features
 
 **1.**  Install via composer
 ```sh
-$ composer require glushkovds/phpclickhouse-laravel
+$ composer require shouyongjiang/phpclickhouse-laravel
 ```
 
 **2.** Add new connection into your config/database.php:
