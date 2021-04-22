@@ -25,6 +25,7 @@ class Builder extends BaseBuilder
     {
         /** @var Client $db */
         $db = DB::connection('clickhouse')->getClient();
+        
         return $db->readOne($this->toSql());
     }
 
