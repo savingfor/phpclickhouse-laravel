@@ -1,12 +1,12 @@
 {
-  "name": "glushkovds/phpclickhouse-laravel",
-  "description": "Adapter of the most popular library https://github.com/smi2/phpClickHouse to Laravel",
+  "name": "shouyongjiang/phpclickhouse-laravel",
+  "description": "Adapter of the most popular library https://github.com/glushkovds/phpclickhouse-laravel to Fix",
   "keywords": [
     "php",
     "laravel",
     "clickhouse"
   ],
-  "homepage": "https://github.com/glushkovds/phpClickHouse-laravel",
+  "homepage": "https://github.com/shouyongjiang/phpclickhouse-laravel",
   "type": "library",
   "license": "MIT",
   "authors": [
