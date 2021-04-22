@@ -25,7 +25,7 @@ class Builder extends BaseBuilder
     {
         /** @var Client $db */
         $db = DB::connection('clickhouse')->getClient();
-        return $db->select($this->toSql());
+        return $db->readOne($this->toSql());
     }
 
     /**
@@ -33,6 +33,6 @@ class Builder extends BaseBuilder
      */
     public function getRows()
     {
-        return $this->get()->rows();
+        return $this->get()->getRows();
     }
 }
