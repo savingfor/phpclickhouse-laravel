@@ -21,19 +21,19 @@ class Builder extends BaseBuilder
     /**
      * @return Statement
      */
-    public function get()
+    public function get($db = "clickhouse")
     {
         /** @var Client $db */
-        $db = DB::connection('clickhouse')->getClient();
-        
+        $db = DB::connection($db)->getClient();
+
         return $db->readOne($this->toSql());
     }
 
     /**
      * @return array
      */
-    public function getRows()
+    public function getRows($db = "clickhouse")
     {
-        return $this->get()->getRows();
+        return $this->get($db)->getRows();
     }
 }
